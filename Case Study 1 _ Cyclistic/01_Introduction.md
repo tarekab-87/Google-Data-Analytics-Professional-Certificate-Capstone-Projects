@@ -6,7 +6,7 @@
 **Date: 11/15/2024**
 
 ## 📝 Introducation 
-as 
+(Introduce the background of the project or dataset. State the objectives of the analysis)
 
 ## 💬 Background
 
