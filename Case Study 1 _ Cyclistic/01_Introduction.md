@@ -6,7 +6,9 @@
 **Date: 11/15/2024**
 
 ## 📝 Introducation 
-(Introduce the background of the project or dataset. State the objectives of the analysis)
+Cyclistic Bike-Share, established in 2016, has become a prominent bike-sharing service in Chicago with a fleet of 5,824 GPS-enabled bicycles distributed across 692 stations. 
+
+As a capstone project for the Google Data Analytics Professional Certificate on Coursera, this case study combines the data analysis process—ask, prepare, process, analyze, share, and act—to understand user behavior and address a critical business challenge: converting casual riders into annual members. Through this analysis, actionable insights and strategies are developed to maximize Cyclistic's growth and profitability.
 
 ## 💬 Background
 
