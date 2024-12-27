@@ -183,7 +183,7 @@ Recommendations:
 
 **Targeted Digital Marketing**
 - Develop campaigns showcasing the cost-effectiveness of annual memberships compared to casual rides.
-- Utilize geo-targeted ads in high-traffic tourist areas to capture casual riders at peak times.
+- Marketing campaigns and ads in high-traffic tourist areas to capture casual riders at peak times.
 - Emphasize convenience and added value for frequent riders in promotional materials.
 
 **Value-Driven Pricing Strategies**
@@ -195,12 +195,11 @@ Recommendations:
 - Use personalized email campaigns to highlight the number of rides and potential savings casual riders could achieve with a membership.
 
 **Operational Enhancements**
-- Improve bike availability during weekends and at popular tourist locations to better serve casual riders and encourage repeat use.
 - Increase the visibility of membership options at docking stations and within the mobile app interface.
 
 ## Conclusion
 
-Cyclistic has significant opportunities to grow its annual membership base by leveraging insights into rider behavior. While casual riders dominate overall ride counts, their seasonal and leisure-oriented usage patterns contrast with members’ consistent, commuter-driven habits. By targeting casual riders with personalized digital campaigns, trial memberships, and loyalty rewards, Cyclistic can effectively convert this group into profitable annual members. Additionally, operational improvements and strategic pricing can further enhance user satisfaction and long-term engagement. These actions will position Cyclistic for sustainable growth and profitability in the competitive bike-sharing market.
+Cyclistic has significant opportunities to grow its annual membership base by leveraging insights into rider behavior. The seasonal and leisure-oriented usage patterns of casual riders contrast with members’ consistent, commuter-driven habits. By targeting casual riders with personalized digital campaigns, trial memberships, and loyalty rewards, Cyclistic can effectively convert this group into profitable annual members. Additionally, operational improvements and strategic pricing can further enhance user satisfaction and long-term engagement. These actions will position Cyclistic for sustainable growth and profitability in the competitive bike-sharing market.
 
 
 
