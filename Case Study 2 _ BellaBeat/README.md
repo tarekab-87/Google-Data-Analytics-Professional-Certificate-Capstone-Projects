@@ -26,17 +26,31 @@ To uncover growth opportunities, Sršen has tasked the marketing analytics team 
 
 **1. Ask / Business Objective and Key Questions**
 
-Business Task
+**Business Task**
+
 Analyze smart device fitness data to uncover growth opportunities, identify trends in consumer behavior, and provide actionable recommendations to refine Bellabeat’s marketing strategy.
 
-> Guiding Questions
+> **Guiding Questions**
 > 1. What are some trends in smart device usage?
 > 2. How could these trends apply to Bellabeat customers?
 > 3. How could these trends help influence Bellabeat marketing strategy?
 
-Stakeholders
+**Stakeholders**
 - Urška Sršen: Bellabeat’s cofounder and Chief Creative Officer.
 - Sando Mur: Bellabeat’s cofounder; key member of the Bellabeat executive team.
 - Bellabeat marketing analytics team.
 
+**2. Prepare**
 
+**Data Overview**
+
+**Source**
+
+The dataset used for this case study is the [FitBit Fitness Tracker Data](https://www.kaggle.com/datasets/arashnic/fitbit), sourced from Kaggle. It is publicly available through [Möbius](https://www.kaggle.com/arashnic) and licensed under the [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/) license. You can access the dataset directly via this FitBit Fitness Tracker Data link.
+
+**Data Structure**
+
+The dataset is divided into two distinct periods:
+
+03/12/2016 – 04/11/2016
+04/12/2016 – 05/12/2016
