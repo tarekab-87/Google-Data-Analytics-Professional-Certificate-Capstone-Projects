@@ -74,7 +74,10 @@ The dataset's integrity and credibility were assessed using the ROCCC framework:
 - Current: The dataset is outdated and does not reflect recent trends or user behavior.
 - Credible: The dataset was sourced from Kaggle, a widely recognized and trusted platform for data sharing.
 
+##3. Data Processing and Cleaning##
 
+**Tools**
+- Bigquery: 
 
 
 
