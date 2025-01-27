@@ -74,10 +74,24 @@ The dataset's integrity and credibility were assessed using the ROCCC framework:
 - Current: The dataset is outdated and does not reflect recent trends or user behavior.
 - Credible: The dataset was sourced from Kaggle, a widely recognized and trusted platform for data sharing.
 
-##3. Data Processing and Cleaning##
+**3. Data Exploring, Combining and Preparing**
 
 **Tools**
-- Bigquery: 
+- Data cleaning and processing: Bigquery and PostgreSQL.
+- Data visulaization: PowerBI
+
+**Data Combining**
+**Data Exploring**
+**Data Preparing**
+
+**4. Data Analysis**
+
+
+
+
+
+
+
 
 
 
