@@ -76,15 +76,131 @@ The dataset's integrity and credibility were assessed using the ROCCC framework:
 
 **3. Data Exploring, Combining and Preparing**
 
-**Tools**
+**3.1 Tools**
 - Data cleaning and processing: Bigquery and PostgreSQL.
 - Data visulaization: PowerBI
 
-**Data Combining**
-**Data Exploring**
-**Data Preparing**
+**3.2 Data Combining**
+
+During the data combining phase, I merged data from multiple source tables into unified ones for easier analysis.  I combined the data from daily_activity_1 (which rpresent the preiod from 12.03.2016 to 11.04.2016 ) and daily_activity_2 (which represent the period from 12.04.2016 to 12.05.2016) into a single table called daily_activity. Similarly, I merged the data from minute_sleep_1_v1 and minute_sleep_2_v1 into a new table named minute_sleep. For these 2 tables, and due to some formatting issues in the date column, I needed first to upload the 2 tables to google sheet, adjust the formatting and then downloaded again. Lastly, I combined the records from hourly_steps_1 and hourly_steps_2 into a unified table called hourly_steps, so all step activity data from the two months could be analyzed together.
+
+**3.4 Data Exploring**
+
+In the data exploration phase, I performed various checks to assess the quality and consistency of the data across the tables daily_activity, minute_sleep, and hourly_steps.
+
+*a. Exploring the Daily Activity Table:*
+
+I examined the daily_activity table for potential null values across columns, data consistency, and duplicates. The results showed no null values, duplicate records, or data inconsistencies.
+
+*b. Checking the Activity Date Range and Values:*
+
+I ensured that the ActivityDate values were within the specified date range and found no inconsistencies or values outside the expected range.
+
+*c. Validating Data Columns:*
+
+I reviewed key activity-related columns like TotalSteps, Calories, and various distance measures to confirm they had no null or negative values and no inconsistencies in data formatting.
+
+*d. Exploring the Minute Sleep Table:*
+
+I explored the minute_sleep table for data format inconsistencies, particularly checking the date field for correct timestamp formatting. I found that the year 2016 was incorrectly represented as "0016" in some entries, which was flagged for correction.
+
+*e. Reviewing the Hourly Steps Table:*
+
+Similar checks were performed on the hourly_steps table, including a review of the ActivityHour field, where the year "2016" had been incorrectly imported as "0016." This was noted for correction.
+
+**3.5 Data Preparing**
+
+In the data preparation phase, several tasks were executed to clean and organize the data. First, a new table was created (daily_activity_cleaned) by removing 17 invalid records where users were sedentary but still recorded distance and steps. Then, user activity data was categorized into four groups based on average steps: sedentary, lightly active, fairly active, and very active users, and separate tables were created for each group. In addition, date format inconsistencies in the minute_sleep and hourly_steps tables were corrected. Finally, the average minutes of sleep per weekday were calculated and displayed for each user.
 
 **4. Data Analysis**
+
+*4.1 Users count*
+
+35 users were identified.............
+
+*4.2 Average daily steps and calories*
+
+![image](https://github.com/user-attachments/assets/4a376b4a-ddea-465e-b97a-796149e892d4)
+
+The provided visual shows two bar charts. The first chart, "Average Daily Steps," indicates that the average daily step count ranges between 6,200 and 7,600 steps across different days of the week. This falls below the commonly recommended 10,000 steps per day, a guideline often cited for achieving physical activity levels associated with health benefits. According to the [CDC](https://www.cdc.gov/physical-activity-basics/guidelines/adults.html?CDC_AAref_Val=https://www.cdc.gov/physicalactivity/basics/adults/index.htm), 10,000 steps daily is a useful target to promote health and prevent inactivity .
+
+The "Average Daily Calories" chart indicates that daily calories burned range between 2,100 and 2,400, aligning with general guidelines for adults. According to the [U.S. Department of Health and Human Services](https://www.fda.gov/media/112972/download?utm_source=chatgpt.com), the average daily caloric needs for adult women range from 1,600 to 2,400 calories, while adult men require between 2,000 to 3,000 calories, depending on factors such as age, sex, and activity level.
+
+*4.3 Type of users based on activity level*
+
+![image](https://github.com/user-attachments/assets/df55bef6-5f85-456f-956a-a7f1c8254e1e)
+
+
+This chart illustrates the distribution of users based on their activity levels, categorized into four groups: Fairly Active, Very Active, Lightly Active, and Sedentary Active. The data shows that Sedentary Active users constitute the largest segment at 28.57%, followed by Fairly Active users at 25.71%. Both Very Active and Lightly Active users account for 22.86% each. The categories in the chart correspond to [commonly used classifications for physical activity levels](https://pmc.ncbi.nlm.nih.gov/articles/PMC3169444/?utm_source=chatgpt.com) which are:
+
+- **Sedentary**: Less than 5,000 steps per day.
+- **Lightly active**: Between 5,000 and 7,499 steps per day.
+- **Fairly active**: Between 7,500 and 9,999 steps per day.
+- **Very active**: More than 10,000 steps per day.
+
+*4.4 Average steps per hour*
+
+![image](https://github.com/user-attachments/assets/a750848b-aaa6-4c2a-9f3c-cdc65e88bee4)
+
+
+This chart visualizes the average number of steps taken by users during each hour of the day, spanning a 24-hour period. The x-axis represents the hours (1 to 24), while the y-axis indicates the average step count. The data reveals patterns in user activity, such as peak movement times, typically during morning or evening hours, and lower activity periods, often during late-night or early-morning hours
+
+*4.5 Steps, minutes sleep and caloris*
+
+Daily Steps vs Minutes Sleep
+
+![image](https://github.com/user-attachments/assets/912dc09d-4490-467c-827e-a6568f65c838)
+
+The chart shows no strong correlation between the two variables (Daily Steps & Minutes Sleep), suggesting that walking more does not necessarily lead to more or less sleep.
+
+Key observations:
+
+- The majority of data points fall within 3,000 – 12,000 steps and 5 – 10 hours of sleep.
+- The trend line remains relatively flat, indicating minimal impact of step count on sleep duration.
+- At higher step counts (above 20K steps), sleep variation increases, but no clear pattern emerges.
+
+Daily Steps vs Calories
+
+![image](https://github.com/user-attachments/assets/d945eab3-df3a-4593-86ef-7e732a6a3d4e)
+
+Daily Steps vs. Daily Calories Analysis
+
+The chart reveals a positive correlation, where more steps generally lead to higher calorie expenditure.
+
+Key Findings:
+- The most significant increase in calories burned occurs between 5K and 15K steps.
+- Beyond 15K steps, the calorie-burning rate slows down, indicating diminishing returns.
+- The data suggests that moderate activity levels are the most efficient for increasing calorie expenditure.
+
+*4.6 Smart device usage patterns* 
+
+![image](https://github.com/user-attachments/assets/a55060db-ecf5-4843-8249-717605541507)
+
+
+This pie chart represents the distribution of smart device usage over the given period (12.03.2016 to 12.05.2016), categorized into three levels:
+
+- Low use (0 to 15 days) – 5.71% (Red) → Bottom 25% of users
+- Moderate use (16 to 44 days) – 77.15% (Blue) → Middle 50% of users
+- High use (45 to 60 days) – 17.14% (Green) → Top 25% of users
+  
+Key observation:
+
+- The majority of users fall into the moderate usage category (16-44 days), making up the middle 50% of the dataset.
+- The high-use category (45 to 60 days) represents the top 25% of users, meaning that only a quarter of users engage with their smart devices very frequently.
+- The low-use category (0-15 days) accounts for the lower 25%, showing minimal interaction with the device.
+
+**5. Conclusion (Act Phase)**
+
+| Strategy                      | Why?                                                      | Action Steps                                                          
+|--------------------------------|----------------------------------------------------------|----------------------------------------------------------------------------|
+| Gamification & Rewards        | 77.15% of users are moderate users; need motivation to stay engaged. | Introduce daily challenges, badges, and leaderboards to encourage activity. |
+| Personalized Notifications    | 28.57% of users are sedentary; need behavior-based nudges. | Implement AI-powered "Move Now" reminders and adaptive sleep alerts.         |
+| Targeted Marketing Campaigns  | Low-use users (5.71%) may churn quickly.                 | Send re-engagement emails, offer premium content, and partner with influencers. |
+| AI Coaching for Steps & Sleep | No strong correlation between steps and sleep; users need better guidance. | Launch personalized fitness & sleep plans with expert-backed recommendations. | 
+| Expand Data Collection        | Current dataset is outdated (2016) and small (30 users). | Collect real-time Bellabeat user data and conduct surveys on engagement trends. |
+
+
+
 
 
 
