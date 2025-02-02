@@ -1,4 +1,4 @@
-## Case Study 2: how can a wellness technology company play it smart? ##
+## Case Study 2: How Can a Wellness Technology Company Play It Smart? ##
 
 **Company name: BellaBeat**
 
@@ -6,11 +6,11 @@
 
 **Date: 05/01/2025**
 
-## 📝 Introductoin ##
+## 📝 Introduction ##
 
 Bellabeat is a high-tech company specializing in health-focused smart products designed for women. These products collect valuable data on activity, sleep, stress, and reproductive health, empowering women with insights to better understand their health and habits.
 
-As part of the capstone project for the Google Data Analytics Professional Certificate, this case study aims to address the business question: ***"How are consumers using Bellabeat smart devices?"*** To gain meaningful insights, the project will analyze fitness data from smart devices while following the steps of the data analysis process: ***Ask, Prepare, Process, Analyze, Share,*** and ***Act***.
+As part of the capstone project for the Google Data Analytics Professional Certificate, this case study aims to address the business question: ***"How are consumers using Bellabeat smart devices?"***. To gain meaningful insights, the project will analyze fitness data from smart devices while following the steps of the data analysis process: ***Ask, Prepare, Process, Analyze, Share,*** and ***Act***.
 
 ## Background ##
 
@@ -56,33 +56,69 @@ The dataset is divided into two distinct periods:
 
 03/12/2016 – 04/11/2016 contain 11 CSV files.
 
-> add tables name and discription 
+| Table Name                  | Type                 | Description |
+|-----------------------------|----------------------|-------------|
+| daily_activity_1            | Microsoft Excel CSV  | Daily activity tracking for 35 users from **03/12/2016 – 04/11/2016**. Tracks steps, distance, intensities, and calories. |
+| heart_rate_seconds_1        | Microsoft Excel CSV  | Heart rate logs recorded every second for the 35 users from **03/12/2016 – 04/11/2016**. |
+| hourly_calories_1           | Microsoft Excel CSV  | Hourly calories burned for 35 users from **03/12/2016 – 04/11/2016**. |
+| hourly_intensities_1        | Microsoft Excel CSV  | Hourly total and average intensity levels for 35 users from **03/12/2016 – 04/11/2016**. |
+| hourly_steps_1              | Microsoft Excel CSV  | Hourly step count for 35 users from **03/12/2016 – 04/11/2016**. |
+| minute_calories_narrow_1    | Microsoft Excel CSV  | Minute-level calorie tracking for 35 users from **03/12/2016 – 04/11/2016**. |
+| minute_intensities_narrow_1 | Microsoft Excel CSV  | Minute-level intensity tracking for 35 users from **03/12/2016 – 04/11/2016**. |
+| minute_mets_narrow_1        | Microsoft Excel CSV  | Minute-level MET (Metabolic Equivalent Task) tracking for 35 users from **03/12/2016 – 04/11/2016**. |
+| minute_sleep_1              | Microsoft Excel CSV  | Minute-by-minute sleep tracking for 35 users from **03/12/2016 – 04/11/2016**. |
+| minute_sleep_1_v1           | Microsoft Excel CSV  | Version 1 of minute-by-minute sleep tracking, possibly refined or adjusted, from **03/12/2016 – 04/11/2016**. |
+| minute_steps_narrow_1       | Microsoft Excel CSV  | Minute-level step tracking for 35 users from **03/12/2016 – 04/11/2016**. |
+| weight_log_info_1           | Microsoft Excel CSV  | Weight log entries for 35 users, including weight measurements and timestamps, from **03/12/2016 – 04/11/2016**. |
+
 
 04/12/2016 – 05/12/2016 contain 18 CSV files. 
 
-> add tables name and discription 
+| Table Name                  | Type                 | Description |
+|-----------------------------|----------------------|-------------|
+| daily_activity_2            | Microsoft Excel CSV  | Daily activity tracking for 35 users from **04/12/2016 – 05/12/2016**. Tracks steps, distance, intensities, and calories. |
+| daily_calories_2            | Microsoft Excel CSV  | Daily calorie expenditure for 35 users from **04/12/2016 – 05/12/2016**. |
+| daily_intensities_2         | Microsoft Excel CSV  | Daily intensity levels for 35 users from **04/12/2016 – 05/12/2016**, categorized into Sedentary, Lightly Active, Fairly Active, and Very Active. |
+| daily_steps_2               | Microsoft Excel CSV  | Daily step count for 35 users from **04/12/2016 – 05/12/2016**. |
+| heart_rate_seconds_2        | Microsoft Excel CSV  | Second-by-second heart rate logs for a subset of users from **04/12/2016 – 05/12/2016**. |
+| hourly_calories_2           | Microsoft Excel CSV  | Hourly calories burned for 35 users from **04/12/2016 – 05/12/2016**. |
+| hourly_intensities_2        | Microsoft Excel CSV  | Hourly intensity levels for 35 users from **04/12/2016 – 05/12/2016**. |
+| hourly_steps_2              | Microsoft Excel CSV  | Hourly step count for 35 users from **04/12/2016 – 05/12/2016**. |
+| minute_calories_narrow_2    | Microsoft Excel CSV  | Minute-level calorie tracking (narrow format) for 35 users from **04/12/2016 – 05/12/2016**. |
+| minute_calories_wide_2      | Microsoft Excel CSV  | Minute-level calorie tracking (wide format) for 35 users from **04/12/2016 – 05/12/2016**. |
+| minute_intensities_narrow_2 | Microsoft Excel CSV  | Minute-level intensity tracking (narrow format) for 35 users from **04/12/2016 – 05/12/2016**. |
+| minute_intensities_wide_2   | Microsoft Excel CSV  | Minute-level intensity tracking (wide format) for 35 users from **04/12/2016 – 05/12/2016**. |
+| minute_mets_narrow_2        | Microsoft Excel CSV  | Minute-level MET (Metabolic Equivalent Task) tracking for 35 users from **04/12/2016 – 05/12/2016**. |
+| minute_sleep_2              | Microsoft Excel CSV  | Minute-by-minute sleep tracking for 35 users from **04/12/2016 – 05/12/2016**. |
+| minute_sleep_2_v1           | Microsoft Excel CSV  | Version 1 of minute-by-minute sleep tracking, possibly refined, from **04/12/2016 – 05/12/2016**. |
+| minute_steps_narrow_2       | Microsoft Excel CSV  | Minute-level step tracking (narrow format) for 35 users from **04/12/2016 – 05/12/2016**. |
+| minute_steps_wide_2         | Microsoft Excel CSV  | Minute-level step tracking (wide format) for 35 users from **04/12/2016 – 05/12/2016**. |
+| sleep_day_2                 | Microsoft Excel CSV  | Summary of sleep data for 35 users from **04/12/2016 – 05/12/2016**. |
+| weight_log_info_2           | Microsoft Excel CSV  | Weight log entries for 35 users, including weight measurements and timestamps, from **04/12/2016 – 05/12/2016**. |
+
 
 Data is considered long format. 
 
-**2.4 Data Integrity And Credibilty**
+**2.4 Data Integrity And Credibility**
 
 The dataset's integrity and credibility were assessed using the ROCCC framework:
 
-- Relevant: The dataset directly supports the analysis objectives by providing insights into user activity and behavior.
-- Original: It qualifies as primary data since it was collected directly from users through a survey.
-- Comprehensive: The dataset limited to a sample size of 30 users and covers a period of only two months and it lacks geographical information.
-- Current: The dataset is outdated and does not reflect recent trends or user behavior.
-- Credible: The dataset was sourced from Kaggle, a widely recognized and trusted platform for data sharing.
+- Relevant: The dataset is a great fit for our analysis goals, as it offers valuable insights into user activity and behavior.
+- Original: Since the data was gathered directly from users via a survey, it counts as primary data.
+- Comprehensive: While the dataset provides useful information, it’s limited to just 35 users and only covers a two-month period. Additionally, it doesn’t include any geographical details, which could have added more depth.
+- Current: Unfortunately, the dataset is a bit outdated and doesn’t capture recent trends or shifts in user behavior.
+- Credible: On the plus side, the dataset comes from Kaggle, a well-known and reliable platform for sharing data, which adds to its credibility.
+
 
 **3. Data Exploring, Combining and Preparing**
 
 **3.1 Tools**
 - Data cleaning and processing: Bigquery and PostgreSQL.
-- Data visulaization: PowerBI
+- Data visualization: PowerBI and Tableau
 
 **3.2 Data Combining**
 
-During the data combining phase, I merged data from multiple source tables into unified ones for easier analysis.  I combined the data from daily_activity_1 (which rpresent the preiod from 12.03.2016 to 11.04.2016 ) and daily_activity_2 (which represent the period from 12.04.2016 to 12.05.2016) into a single table called daily_activity. Similarly, I merged the data from minute_sleep_1_v1 and minute_sleep_2_v1 into a new table named minute_sleep. For these 2 tables, and due to some formatting issues in the date column, I needed first to upload the 2 tables to google sheet, adjust the formatting and then downloaded again. Lastly, I combined the records from hourly_steps_1 and hourly_steps_2 into a unified table called hourly_steps, so all step activity data from the two months could be analyzed together.
+During the data consolidation phase, I combined the two months' worth of data into unified tables to streamline the analysis process. Specifically, I merged the data from daily_activity_1 (covering the period from March 12, 2016, to April 11, 2016) and daily_activity_2 (covering April 12, 2016, to May 12, 2016) into a single table named daily_activity. I also combined the data from minute_sleep_1_v1 and minute_sleep_2_v1 into a new table called minute_sleep. However, due to some formatting inconsistencies in the date columns, I first had to upload both tables to Google Sheets, fix the formatting issues, and then download them again before merging. Finally, I unified the records from hourly_steps_1 and hourly_steps_2 into a single table named hourly_steps. This allowed me to analyze all step activity data from the two-month period in one place.
 
 **3.4 Data Exploring**
 
@@ -92,46 +128,42 @@ In the data exploration phase, I performed various checks to assess the quality 
 
 I examined the daily_activity table for potential null values across columns, data consistency, and duplicates. The results showed no null values, duplicate records, or data inconsistencies.
 
-*b. Checking the Activity Date Range and Values:*
-
 I ensured that the ActivityDate values were within the specified date range and found no inconsistencies or values outside the expected range.
-
-*c. Validating Data Columns:*
 
 I reviewed key activity-related columns like TotalSteps, Calories, and various distance measures to confirm they had no null or negative values and no inconsistencies in data formatting.
 
-*d. Exploring the Minute Sleep Table:*
+*b. Exploring the Minute Sleep Table:*
 
 I explored the minute_sleep table for data format inconsistencies, particularly checking the date field for correct timestamp formatting. I found that the year 2016 was incorrectly represented as "0016" in some entries, which was flagged for correction.
 
-*e. Reviewing the Hourly Steps Table:*
+*c. Reviewing the Hourly Steps Table:*
 
 Similar checks were performed on the hourly_steps table, including a review of the ActivityHour field, where the year "2016" had been incorrectly imported as "0016." This was noted for correction.
 
 **3.5 Data Preparing**
 
-In the data preparation phase, several tasks were executed to clean and organize the data. First, a new table was created (daily_activity_cleaned) by removing 17 invalid records where users were sedentary but still recorded distance and steps. Then, user activity data was categorized into four groups based on average steps: sedentary, lightly active, fairly active, and very active users, and separate tables were created for each group. In addition, date format inconsistencies in the minute_sleep and hourly_steps tables were corrected. Finally, the average minutes of sleep per weekday were calculated and displayed for each user.
+In the data preparation phase, several tasks were performed to clean and organize the data. First, a new table was created (daily_activity_cleaned) by removing 17 Invalid records were removed where users were sedentary but still recorded movement. Then, user activity data was categorized into four groups based on average steps: sedentary, lightly active, fairly active, and very active users, and separate tables were created for each group. In addition, date format inconsistencies in the minute_sleep and hourly_steps tables were corrected. Finally, the average minutes of sleep per weekday were calculated and displayed for each user.
 
 **4. Data Analysis**
 
 *4.1 Users count*
 
-35 users were identified.............
+35 users were identified.
 
 *4.2 Average daily steps and calories*
 
 ![image](https://github.com/user-attachments/assets/4a376b4a-ddea-465e-b97a-796149e892d4)
 
-The provided visual shows two bar charts. The first chart, "Average Daily Steps," indicates that the average daily step count ranges between 6,200 and 7,600 steps across different days of the week. This falls below the commonly recommended 10,000 steps per day, a guideline often cited for achieving physical activity levels associated with health benefits. According to the [CDC](https://www.cdc.gov/physical-activity-basics/guidelines/adults.html?CDC_AAref_Val=https://www.cdc.gov/physicalactivity/basics/adults/index.htm), 10,000 steps daily is a useful target to promote health and prevent inactivity .
+The visualization includes two bar charts. The first chart, titled "Average Daily Steps," reveals that the average step count per day ranges from 6,200 to 7,600 steps across the week. This is below the widely recommended target of 10,000 steps per day, a benchmark often associated with health benefits like improved fitness and reduced risk of chronic diseases.  As noted by the [CDC](https://www.cdc.gov/physical-activity-basics/guidelines/adults.html?CDC_AAref_Val=https://www.cdc.gov/physicalactivity/basics/adults/index.htm), walking 10,000 steps daily is a well-established goal for maintaining an active lifestyle.
 
-The "Average Daily Calories" chart indicates that daily calories burned range between 2,100 and 2,400, aligning with general guidelines for adults. According to the [U.S. Department of Health and Human Services](https://www.fda.gov/media/112972/download?utm_source=chatgpt.com), the average daily caloric needs for adult women range from 1,600 to 2,400 calories, while adult men require between 2,000 to 3,000 calories, depending on factors such as age, sex, and activity level.
+The second chart, "Average Daily Calories," shows that the average calories burned each day fall between 2,100 and 2,400. This aligns with general caloric guidelines for adults. According to the [U.S. Department of Health and Human Services](https://www.fda.gov/media/112972/download?utm_source=chatgpt.com), adult women typically need between 1,600 and 2,400 calories per day, while adult men require 2,000 to 3,000 calories daily, depending on factors like age, sex, and activity level. These findings suggest that while step counts may fall short of the ideal target, calorie expenditure remains within a healthy range for most adults.
 
 *4.3 Type of users based on activity level*
 
 ![image](https://github.com/user-attachments/assets/df55bef6-5f85-456f-956a-a7f1c8254e1e)
 
 
-This chart illustrates the distribution of users based on their activity levels, categorized into four groups: Fairly Active, Very Active, Lightly Active, and Sedentary Active. The data shows that Sedentary Active users constitute the largest segment at 28.57%, followed by Fairly Active users at 25.71%. Both Very Active and Lightly Active users account for 22.86% each. The categories in the chart correspond to [commonly used classifications for physical activity levels](https://pmc.ncbi.nlm.nih.gov/articles/PMC3169444/?utm_source=chatgpt.com) which are:
+This chart breaks down users into four activity-level categories: **Fairly Active**, **Very Active**, **Lightly Active**, and **Sedentary Active**. The data reveals that the largest group is **Sedentary Active users**, making up 28.57% of the total. Following closely, **Fairly Active users** represent 25.71%. Meanwhile, both **Very Active** and **Lightly Active users** are tied at 22.86% each. This distribution highlights that a significant portion of users fall into the less active categories, with nearly a third being sedentary and only about a quarter being fairly or very active. The categories in the chart correspond to [commonly used classifications for physical activity levels](https://pmc.ncbi.nlm.nih.gov/articles/PMC3169444/?utm_source=chatgpt.com) which are:
 
 - **Sedentary**: Less than 5,000 steps per day.
 - **Lightly active**: Between 5,000 and 7,499 steps per day.
@@ -142,8 +174,7 @@ This chart illustrates the distribution of users based on their activity levels,
 
 ![image](https://github.com/user-attachments/assets/a750848b-aaa6-4c2a-9f3c-cdc65e88bee4)
 
-
-This chart visualizes the average number of steps taken by users during each hour of the day, spanning a 24-hour period. The x-axis represents the hours (1 to 24), while the y-axis indicates the average step count. The data reveals patterns in user activity, such as peak movement times, typically during morning or evening hours, and lower activity periods, often during late-night or early-morning hours
+This chart displays the average number of steps users take over a 24-hour period. The x-axis represents the hours of the day (from 1 to 24), while the y-axis shows the average step count. The data reveals clear patterns in user activity, with noticeable spikes in movement during the morning and evening hours—times when people are typically most active. Conversely, step counts dip significantly during late-night and early-morning hours, reflecting lower activity levels. This visualization effectively pinpoints when users are at their most and least active throughout the day.
 
 *4.5 Steps, minutes sleep and caloris*
 
@@ -151,26 +182,29 @@ Daily Steps vs Minutes Sleep
 
 ![image](https://github.com/user-attachments/assets/912dc09d-4490-467c-827e-a6568f65c838)
 
-The chart shows no strong correlation between the two variables (Daily Steps & Minutes Sleep), suggesting that walking more does not necessarily lead to more or less sleep.
+The chart reveals no significant correlation between the two variables—**Daily Steps** and **Minutes Sleep**—indicating that increased walking doesn’t necessarily result in more or less sleep. 
 
-Key observations:
+**Key observations:**  
+- Most data points cluster within the range of **3,000 to 12,000 steps** and **5 to 10 hours of sleep**.  
+- The trend line is nearly flat, showing that step count has little to no effect on sleep duration.  
+- At higher step counts (above 20,000 steps), sleep duration becomes more varied, but no consistent pattern emerges.  
 
-- The majority of data points fall within 3,000 – 12,000 steps and 5 – 10 hours of sleep.
-- The trend line remains relatively flat, indicating minimal impact of step count on sleep duration.
-- At higher step counts (above 20K steps), sleep variation increases, but no clear pattern emerges.
+In short, the data suggests that daily step count doesn’t have a strong influence on how long people sleep.
 
 Daily Steps vs Calories
 
 ![image](https://github.com/user-attachments/assets/d945eab3-df3a-4593-86ef-7e732a6a3d4e)
 
-Daily Steps vs. Daily Calories Analysis
+Daily Steps vs. Daily Calories
 
 The chart reveals a positive correlation, where more steps generally lead to higher calorie expenditure.
 
-Key Findings:
-- The most significant increase in calories burned occurs between 5K and 15K steps.
-- Beyond 15K steps, the calorie-burning rate slows down, indicating diminishing returns.
-- The data suggests that moderate activity levels are the most efficient for increasing calorie expenditure.
+Key observations:
+- The biggest jump in calories burned happens when users take between 5,000 and 15,000 steps.
+- Once step counts go beyond 15,000, the rate of calorie burning starts to slow down, showing diminishing returns.
+- The data indicates that moderate activity levels (within the 5K–15K step range) are the most effective for boosting calorie expenditure.
+
+In other words, while increasing steps up to 15,000 significantly boosts calorie burn, pushing beyond that point yields smaller gains, making moderate activity the sweet spot for efficiency.
 
 *4.6 Smart device usage patterns* 
 
@@ -186,7 +220,7 @@ This pie chart represents the distribution of smart device usage over the given 
 Key observation:
 
 - The majority of users fall into the moderate usage category (16-44 days), making up the middle 50% of the dataset.
-- The high-use category (45 to 60 days) represents the top 25% of users, meaning that only a quarter of users engage with their smart devices very frequently.
+- The high-use category (45 to 60 days) represents the top 25% of users, indicating that only a quarter of users engage frequently with their smart devices.
 - The low-use category (0-15 days) accounts for the lower 25%, showing minimal interaction with the device.
 
 **5. Conclusion (Act Phase)**
