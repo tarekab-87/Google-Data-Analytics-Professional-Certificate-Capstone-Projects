@@ -3,7 +3,7 @@
 
 **Author: Tarek Abou Ismail**
 
-**Date: 11/15/2024**
+**Date: 15/November/2024**
 
 ## 📝 Introducation 
 Cyclistic Bike-Share, established in 2016, has become a prominent bike-sharing service in Chicago with a fleet of 5,824 GPS-enabled bicycles distributed across 692 stations.
