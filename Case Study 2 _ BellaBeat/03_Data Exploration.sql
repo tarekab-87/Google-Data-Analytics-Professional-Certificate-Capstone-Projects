@@ -135,6 +135,7 @@ WHERE SAFE_CAST(ActivityHour AS TIMESTAMP) IS NULL;
 ---
 
 ## ✅ Summary of Findings
+  
 | Issue | Status |
 |-------|--------|
 | Null values in `daily_activity` | ✅ No null values found |
