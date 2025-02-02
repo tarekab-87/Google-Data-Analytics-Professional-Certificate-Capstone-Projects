@@ -140,6 +140,7 @@ SELECT * FROM `spheric-engine-432411-p0.case_study_2.daily_activity_cleaned`;
 ---
 
 ## 🎯 Summary of Fixes & Data Preparation
+  
 | Task | Status |
 |------|--------|
 | Removed 17 invalid records from `daily_activity` | ✅ Done |
